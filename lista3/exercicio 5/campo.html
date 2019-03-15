@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="campo.js"></script>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+	<h1>Formulario de Contato</h1>
+<form> 
+	<label for="nome">Nome Completo:</label>
+	<input type="text" id="nome" value="" onblur="liberar();" /><br><br>
+     
+     <label for="senha">Digite sua senha:</label>
+     <input type="password" id="senha" disabled="disabled" value="" onblur="liberarSenha1();" /><br><br>
+
+      <label for="senhaTmp">Confirme sua senha:</label>
+     <input type="password" id="senha2" disabled="disabled" value="" onblur="liberarSenha2();" /><br>
+  
+  <button type="botao" id="botao" disabled="disabled">Cadastrar</button>
+
+  </form>
+  </body>
+</html>

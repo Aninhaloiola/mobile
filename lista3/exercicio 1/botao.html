@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Botão Cor
+	</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script type="text/javascript" src="cor.js"></script>
+</head>
+<body  id="color">
+	
+	<h1>Formulario de Contato</h1>
+	<div class='form'>
+	<label for="nome">Nome Completo:</label><br>
+	<input type="name" name="nome"><br>
+	
+	<label for="date">Data de Nascimento:</label><br>
+	<input type="date"><br>
+
+	<label for="fone">Telefone:</label><br>
+	<input type="fone"><br>
+
+	<label for="email">E-mail:</label><br>
+	<input type="email" name="email"><br>
+
+	<label for="end">Endereço:</label><br>
+	<input type="end" name="end"><br>
+
+	<label for="cmp">Complemento:</label><br>
+	<input type="cmp" name="cmp"><br>
+
+	<label for="cd">Cidade:</label><br>
+	<input type="cd" name="cd">
+	
+	<select name="estado">
+    <option value="Acre">AC</option>
+    <option value="Alagoas">AL</option>
+    <option value="Amapa">AP</option>
+    <option value="Amozonas">AM</option>
+  	</select><br><br>
+
+	<label for="CNH">Tem CNH?</label><br>
+	<input type="radio" name="gender" value="male" checked> Sim<br>
+  	<input type="radio" name="gender" value="female"> Não<br><br>
+  
+  	<input type="button" id="verde" value="Enviar" onclick="mudarcor('verde')">
+  	<input type="button" id="vermelho" value="Encerrar" onclick="mudarcor('vermelho')">
+  	<input type="button" id="azul" value="Voltar" onclick="mudarcor('azul')">
+  	<input type="button" id="amarelo" value="Pausar" onclick="mudarcor('amarelo')">
+  </div>
+</body>
+</html>
