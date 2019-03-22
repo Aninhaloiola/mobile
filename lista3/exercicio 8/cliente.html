@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8"/>
+        <title>Cadastro de Clientes</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="func.js"></script>
+    </head>
+    <body>
+        <form  action="" method="post" >
+            <label>Nome:</label><br>
+            <input type="text" id="nome" placeholder="Nome"><br><br>
+            
+            <label>TP:</label><br>
+            <input type="radio" name="pessoa" class="pessoa" id="pessoa" onclick="verificarRadio()" checked>Física
+            <input type="radio" name="pessoa" class="pessoa" id="pessoa" onclick="verificarRadio()">Jurídica<br><br>
+
+            <label>Data de Nascimento:</label><br>
+            <input type="date" id="data_nasc"><br><br>
+
+            <label>CPF:</label><br>
+            <input type="text" id="cpf" placeholder="CPF" ><br><br>
+            
+            <label>CNPJ:</label><br>
+            <input type="text" id="cnpj" placeholder="CNPJ"><br><br>
+            
+            <label>Endereço:</label><br>
+            <input type="text" id="end" placeholder="Endereço"><br><br>
+            
+            <label>CEP:</label><br>
+            <input type="text" id="cep" placeholder="CEP"><br><br>
+                    
+            <label>Telefone:</label><br>
+            <input type="text" id="fone" placeholder="Telefone"><br><br>
+            
+            <label>Email:</label><br>
+            <input type="email" id="email" placeholder="Email"><br><br>
+
+            <input type="button" value="Cadastrar" onclick="cadastrar()">
+        </form>
+    </body>
+</html>

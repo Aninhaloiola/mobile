@@ -19,6 +19,7 @@ if(senha.value != ""  )
      
 }
 };
+
 function liberarSenha2()
 {
 
@@ -27,8 +28,7 @@ var senha = document.getElementById("senha");
 var senha2 = document.getElementById("senha2");
 
 var botao = document.getElementById("botao");
-if(senha2.value != "")
-{
+if(senha2.value != ""){
     if(senha.value == senha2.value)
     {
         botao.disabled = false;
@@ -42,5 +42,11 @@ if(senha2.value != "")
     botao.disabled = true;
      
 }    
+if(senha.value.length >= 6 && senha.value.length <= 10) {
+
+
+    }else{
+        alert("senha deve conter de 6 a 10 caracteres");
+    }
 };
   
